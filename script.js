@@ -32,7 +32,7 @@ console.log(chilometriUtente, etaUtente);
  console.log(risultato);
 }
  // SE l'utente ha >65 anni (anziano)
- else  (etaUtente >65) {
+ else if (etaUtente >65) {
  // ALLORA applicare sconto del 40%
  // ELABORAZIONE moltiplicare il numero dei chilometri per 0.21 e togliere due quinti dal risultato
  let risultato = chilometriUtente * 0.126 ;
