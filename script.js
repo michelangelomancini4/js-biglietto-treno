@@ -27,15 +27,13 @@ console.log(chilometriUtente, etaUtente);
      // ELABORAZIONE moltiplicare il numero dei chilometri per 0.21
 
     let risultato = (chilometriUtente * 0.21)
-
     console.log(risultato);
-
  } 
  // SE l'utente ha <18 anni (minorenne)
  if (etaUtente < 18){
 // ALLORA applicare sconto del 20%
  // ELABORAZIONE moltiplicare il numero dei chilometri per 0.21 e togliere un quinto dal risultato
- let risultato = (chilometriUtente * 0.21  - chilometriUtente / 5 );
+ let risultato = chilometriUtente * 0.168 ;
 
  console.log(risultato);
  
@@ -45,10 +43,9 @@ console.log(chilometriUtente, etaUtente);
  if (etaUtente >65) {
  // ALLORA applicare sconto del 40%
  // ELABORAZIONE moltiplicare il numero dei chilometri per 0.21 e togliere due quinti dal risultato
- let risultato = (chilometriUtente * 0.21  - chilometriUtente / 2,5 );
+ let risultato = chilometriUtente * 0.126 ;
 
  console.log(risultato);
-
 }
 
 // OUTPUT- Mostrare prezzo finale , messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
