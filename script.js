@@ -15,16 +15,9 @@ let etaUtente = parseInt(prompt("inserisci una età (un numero)"));
 console.log(chilometriUtente, etaUtente);
 // ELABPRAZIONE calcolare il prezzo del biglietto in base ai km (0.21 € al km)
 
- // SE l'utente ha >18 <65 anni (adulto)
- if (etaUtente >18 && etaUtente <65) { 
-
-     // ELABORAZIONE moltiplicare il numero dei chilometri per 0.21
-
-    let risultato = (chilometriUtente * 0.21)
-    console.log( risultato.toFixed( 2 ) );
-} 
+ 
  // SE l'utente ha <18 anni (minorenne)
- else if (etaUtente < 18){
+ if (etaUtente < 18){
 // ALLORA applicare sconto del 20%
  // ELABORAZIONE moltiplicare il numero dei chilometri per 0.21 e togliere un quinto dal risultato
  let risultato = chilometriUtente * 0.168 ;
@@ -39,4 +32,13 @@ console.log(chilometriUtente, etaUtente);
 
  console.log( risultato.toFixed( 2 ) );
 }
+// SE l'utente ha >18 <65 anni (adulto)
+else {
+     // ELABORAZIONE moltiplicare il numero dei chilometri per 0.21
+    let risultato = (chilometriUtente * 0.21)
+    console.log( risultato.toFixed( 2 ) );
+}
+
+
+} 
 // OUTPUT- Mostrare prezzo finale , messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
