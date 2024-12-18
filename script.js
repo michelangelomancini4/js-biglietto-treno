@@ -22,7 +22,7 @@ console.log(chilometriUtente, etaUtente);
  // ELABORAZIONE moltiplicare il numero dei chilometri per 0.21 e togliere un quinto dal risultato
  let risultato = chilometriUtente * 0.168 ;
 
- console.log( risultato.toFixed( 2 ) );
+ console.log("Pagherai", risultato.toFixed( 2 ), "€" );
 }
  // SE l'utente ha >65 anni (anziano)
  else if (etaUtente >65) {
@@ -30,15 +30,15 @@ console.log(chilometriUtente, etaUtente);
  // ELABORAZIONE moltiplicare il numero dei chilometri per 0.21 e togliere due quinti dal risultato
  let risultato = chilometriUtente * 0.126 ;
 
- console.log( risultato.toFixed( 2 ) );
+ console.log("Pagherai", risultato.toFixed( 2 ), "€"  );
 }
 // SE l'utente ha >18 <65 anni (adulto)
 else {
      // ELABORAZIONE moltiplicare il numero dei chilometri per 0.21
     let risultato = (chilometriUtente * 0.21)
-    console.log( risultato.toFixed( 2 ) );
+    console.log("Pagherai", risultato.toFixed( 2 ), "€"  );
 }
 
 
-} 
+
 // OUTPUT- Mostrare prezzo finale , messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
